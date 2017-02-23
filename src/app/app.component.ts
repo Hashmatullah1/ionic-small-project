@@ -16,6 +16,7 @@ export class MyApp {
 
   pages: Array<{title: string, component: any}>;
 
+
   constructor(public platform: Platform) {
     this.initializeApp();
 
@@ -24,14 +25,15 @@ export class MyApp {
       { title: 'Page One', component: Page1 },
       { title: 'Page Two', component: Page2 }
     ];
-
   }
 
   initializeApp() {
     this.platform.ready().then(() => {
       // Okay, so the platform is ready and our plugins are available.
       // Here you can do any higher level native things you might need.
-      StatusBar.styleDefault();
+      // StatusBar.overlaysWebView(true); // let status bar overlay webview
+      StatusBar.backgroundColorByHexString('#1E58AA');
+      // StatusBar.styleBlackOpaque() // set status bar to white
       Splashscreen.hide();
     });
   }
