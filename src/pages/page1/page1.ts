@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-
+import {COMPANIES,Company} from '../../models/company.model';
 import { NavController } from 'ionic-angular';
 import { Page2 } from '../page2/page2';
 @Component({
@@ -9,6 +9,7 @@ import { Page2 } from '../page2/page2';
 export class Page1 {
 
   page : any
+  companies : Company[] = COMPANIES;
   constructor(public navCtrl: NavController) {
     this.page = Page2;
   }

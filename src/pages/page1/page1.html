@@ -1,7 +1,7 @@
 <ion-header>
     <ion-toolbar color="primary">
     <ion-buttons start class="start">
-      <menu-notify></menu-notify>
+      <menu-notify  menuToggle ></menu-notify>
     </ion-buttons>
     <ion-title>Chat</ion-title>
     <ion-buttons end class="pad-right-5">
@@ -14,12 +14,28 @@
 </ion-header>
 
 
-<ion-content padding>
-  <h3>Ionic Menu Starter</h3>
+<ion-content class="outer-content">
+  <ion-list>
+    <ion-item-sliding *ngFor="let company of companies">
+      <ion-item>
+        <chat-avatar [isOnline]='company.isOnline' item-left></chat-avatar>
+        <h2>{{company.name}}</h2>
+        <p><small>{{company.address}}</small></p>
+      </ion-item>
+      <ion-item-options>
+        <button ion-button color="light" icon-left>
+          <ion-icon name="ios-more"></ion-icon>
+          More
+        </button>
+        <button ion-button color="primary" icon-left>
+          <ion-icon name="text"></ion-icon>
+          Text
+        </button>
+        <button ion-button color="secondary" icon-left>
+          <ion-icon name="call"></ion-icon>
+          Call
+        </button>
+      </ion-item-options>
+    </ion-item-sliding>
 
-  <p>
-    If you get lost, the <a href="http://ionicframework.com/docs/v2">docs</a> will show you the way.
-  </p>
-
-  <button ion-button secondary menuToggle>Toggle Menu</button>
-</ion-content>
+  </ion-list>
