@@ -1,0 +1,13 @@
+menu-notify {
+    $circle-radius : 7px;
+    .notify-circle {
+        display: inline-block;        
+        width: $circle-radius;
+        height: $circle-radius;
+        border-radius: $circle-radius/2;
+        background-color: red;
+        position: relative;
+        top: -6px;
+        left: 70%;
+    }
+}
