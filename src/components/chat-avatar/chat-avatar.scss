@@ -1,0 +1,22 @@
+chat-avatar {
+    max-width: 50px;
+    ion-avatar{
+        background-color:lightgray;
+        $circle-radius : 10px;
+        border-radius: 50%;
+        .chat-circle {
+            display: inline-block;        
+            width: $circle-radius;
+            height: $circle-radius;
+            border-radius: $circle-radius/2;
+            background-color: gray;
+            position: absolute;
+            left : 45px;
+            border:solid 2px white;
+        }
+        .online {
+            background-color: limegreen;
+        }
+
+    }
+}
