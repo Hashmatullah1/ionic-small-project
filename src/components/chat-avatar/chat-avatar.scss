@@ -10,9 +10,8 @@ chat-avatar {
             height: $circle-radius;
             border-radius: $circle-radius/2;
             background-color: gray;
-            position: absolute;
-            left : 55px;
-            top  : 15px;
+            position: relative;
+            left : 18px;
             border:solid 2px white;
         }
         .online {
