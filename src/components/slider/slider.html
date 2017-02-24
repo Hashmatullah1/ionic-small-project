@@ -1,0 +1,30 @@
+<!--
+  Generated template for the Slider component.
+
+  See https://angular.io/docs/ts/latest/api/core/index/ComponentMetadata-class.html
+  for more info on Angular 2 Components.
+-->
+
+<div class="display-container" #container>
+
+<div class="display-top-left"><menu-notify class="transparent" menuToggle ></menu-notify></div>
+
+<div class="display-mid-center"><small><button ion-button class="small-transform">IN EVIDENZA</button></small></div>
+<div class="display-top-right"><button ion-button icon-only class="transparent" color="royal">
+         <small><ion-icon name="search"></ion-icon></small>
+      </button></div>
+      <p class="display-below-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor</p>
+<ion-slides pager=true loop=true initialSlide=2  (ionSlideWillChange)="changeSlide(container)" > 
+  <ion-slide>
+  </ion-slide>
+  <ion-slide>
+  </ion-slide>
+  <ion-slide>
+  </ion-slide>
+   <ion-slide>
+  </ion-slide>
+   <ion-slide>
+  </ion-slide>
+</ion-slides>
+
+</div>
