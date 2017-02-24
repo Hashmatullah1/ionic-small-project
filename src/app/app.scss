@@ -1,6 +1,4 @@
 // http://ionicframework.com/docs/v2/theming/
-
-
 // App Global Sass
 // --------------------------------------------------
 // Put style rules here that you want to apply globally. These
@@ -14,56 +12,65 @@
 // To declare rules for a specific mode, create a child rule
 // for the .md, .ios, or .wp mode classes. The mode class is
 // automatically applied to the <body> element in the app.
-.tab-button{
-    border-top : solid 2px #3769AC;
-    
-}
-.tab-button[aria-selected=true] {
-    border-top: solid 2px #7C9DCA;
-    .tab-button-text {
-        color : white;
-    }
-}
-.tab-button-text {
-    color : #768CBD;
-}
-.tabs-ios[tabsPlacement=top] .tabbar{
-    border-top : 0px;
+.tab-button {
+  border-top: solid 2px #3769AC;
 }
 
+.tab-button[aria-selected=true] {
+  border-top: solid 2px #7C9DCA;
+  .tab-button-text {
+    color: white;
+  }
+}
+
+.tab-button-text {
+  color: #768CBD;
+}
+
+.tabs-ios[tabsPlacement=top] .tabbar {
+  border-top: 0px;
+}
 
 ion-item-sliding:not(:last-child) .item {
-    border-bottom: 0.55px solid #c8c7cc;
-    padding: 10px;
+  border-bottom: 0.55px solid #c8c7cc;
+  padding: 10px;
 }
 
-.list-md .item-block .item-inner,.item-md.item-block .item-inner
-.list-ios .item-block .item-inner,.item-ios.item-block .item-inner,
+.list-md .item-block .item-inner,
+.item-md.item-block .item-inner .list-ios .item-block .item-inner,
+.item-ios.item-block .item-inner,
 .header-ios .toolbar-ios:last-child .toolbar-background-ios {
-        border: none;
-    }
-
-    .searchbar-ios {
-        padding:15px;
-    }
-    .searchbar-ios .searchbar-input {
-        border-radius: 0px;
-    }
-
-.item-md , .item-ios , .item-wp {
-    ion-avatar {
-        display: relative;
-        vertical-align: middle;
-        text-align: center;
-        width: 50px;
-        height: 50px;
-        img {
-        width: 15px;
-        height: 15px;
-        margin: auto;
-    }
-    }
-    
-
+  border: none;
 }
 
+.searchbar-ios {
+  padding: 15px;
+}
+
+.searchbar-ios .searchbar-input {
+  border-radius: 0px;
+}
+
+.item-md,
+.item-ios,
+.item-wp {
+  ion-avatar {
+    display: relative;
+    vertical-align: middle;
+    text-align: center;
+    width: 50px;
+    height: 50px;
+    img {
+      width: 15px;
+      height: 15px;
+      margin: auto;
+    }
+  }
+}
+
+.swiper-pagination-bullet {
+  background-color: darkgray;
+}
+.swiper-pagination-bullet-active {
+    background-color:royalblue;
+}

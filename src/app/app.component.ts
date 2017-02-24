@@ -23,7 +23,7 @@ export class MyApp {
     // used for an example of ngFor and navigation
     this.pages = [
       { title: 'Chat Page', component: ChatTabsPage },
-      { title: 'Page Two', component: Page2 },
+      { title: 'Other Page', component: Page2 },
     ];
   }
 
@@ -32,9 +32,9 @@ export class MyApp {
       // Okay, so the platform is ready and our plugins are available.
       // Here you can do any higher level native things you might need.
       // StatusBar.overlaysWebView(true); // let status bar overlay webview
-      StatusBar.backgroundColorByHexString('#1E58AA');
+      // StatusBar.backgroundColorByHexString('#1E58AA');
       // StatusBar.styleBlackOpaque() // set status bar to white
-      Splashscreen.hide();
+      // Splashscreen.hide();
     });
   }
 

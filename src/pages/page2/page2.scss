@@ -1,3 +1,38 @@
 page-page2 {
-
+    overflow: auto;
+  ion-label {
+    h2 {
+      white-space: initial;
+    }
+    
+    p {
+        img {
+            position: relative;
+            top:10px;
+        }
+    }
+  }
+  .item-ios ion-thumbnail ion-img,
+    .item-ios ion-thumbnail img {
+      width: 80px;
+      height: 80px;
+    }
+    .item-ios p, .item-md p, .item-wp p{
+        color: darkslategray;
+        font-size: 1.2rem;
+        font-weight: 600;
+    }
+    .bottom-bar{
+        width: 100%;
+        height: 80px;
+        background:#255FB1;
+        color: white;
+        padding: 30px;
+        text-align: center;
+        font-weight: bold;
+        cursor: pointer;
+    }
+    .list-ios, .list-md ,.list-wp {
+        margin:0px;
+    }
 }

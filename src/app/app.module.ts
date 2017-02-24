@@ -6,6 +6,7 @@ import { Page2 } from '../pages/page2/page2';
 import { ChatTabsPage } from '../pages/chat-tabs/chat-tabs';
 import { MenuNotifyComponent } from '../components/menu-notify/menu-notify';
 import { ChatAvatarComponent } from '../components/chat-avatar/chat-avatar';
+import { SliderComponent } from '../components/slider/slider';
 @NgModule({
   declarations: [
     MyApp,
@@ -13,7 +14,8 @@ import { ChatAvatarComponent } from '../components/chat-avatar/chat-avatar';
     Page2,
     MenuNotifyComponent,
     ChatAvatarComponent,
-    ChatTabsPage
+    ChatTabsPage,
+    SliderComponent
   ],
   imports: [
     IonicModule.forRoot(MyApp)

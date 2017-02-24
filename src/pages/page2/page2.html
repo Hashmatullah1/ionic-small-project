@@ -1,23 +1,53 @@
 <ion-header>
-  <ion-navbar>
-    <button ion-button menuToggle>
-      <ion-icon name="menu"></ion-icon>
-    </button>
-    <ion-title>Page Two</ion-title>
-  </ion-navbar>
+  <slider></slider>
 </ion-header>
-
 <ion-content>
   <ion-list>
-    <button ion-item *ngFor="let item of items" (click)="itemTapped($event, item)">
-      <ion-icon [name]="item.icon" item-left></ion-icon>
-      {{item.title}}
-      <div class="item-note" item-right>
-        {{item.note}}
-      </div>
-    </button>
+    <ion-item>
+      <ion-thumbnail item-left>
+        <img src="assets/img1.jpg">
+      </ion-thumbnail>
+      <h2>Lorem ipsum dolor sit consectetur adipiscing elit, sed do eiusmod tempor</h2>
+      <p>
+        <img src='/assets/time.jpg'> 03 November 2016 &nbsp;<img src='assets/comment.jpg'> 12
+      </p>
+    </ion-item>
+    <ion-item>
+      <ion-thumbnail item-left>
+        <img src="assets/img2.jpg">
+      </ion-thumbnail>
+      <h2>Lorem ipsum dolor sit consectetur adipiscing elit, sed do eiusmod tempor</h2>
+      <p>
+        <img src='/assets/time.jpg'> 03 November 2016 &nbsp;<img src='assets/comment.jpg'> 12
+      </p>
+    </ion-item>
+    <ion-item>
+      <ion-thumbnail item-left>
+        <img src="assets/img3.jpg">
+      </ion-thumbnail>
+      <h2>Lorem ipsum dolor sit consectetur adipiscing elit, sed do eiusmod tempor</h2>
+      <p>
+        <img src='/assets/time.jpg'> 03 November 2016 &nbsp;<img src='assets/comment.jpg'> 12
+      </p>
+    </ion-item>
+    <ion-item>
+      <ion-thumbnail item-left>
+        <img src="assets/img4.jpg">
+      </ion-thumbnail>
+      <h2>Lorem ipsum dolor sit consectetur adipiscing elit, sed do eiusmod tempor</h2>
+      <p>
+        <img src='/assets/time.jpg'> 03 November 2016 &nbsp;<img src='assets/comment.jpg'> 12
+      </p>
+    </ion-item>
+    <ion-item>
+      <ion-thumbnail item-left>
+        <img src="assets/img5.jpg">
+      </ion-thumbnail>
+      <h2>Lorem ipsum dolor sit consectetur adipiscing elit, sed do eiusmod tempor</h2>
+      <p>
+        <img src='/assets/time.jpg'> 03 November 2016 &nbsp;<img src='assets/comment.jpg'> 12
+      </p>
+    </ion-item>
   </ion-list>
-  <div *ngIf="selectedItem" padding>
-    You navigated here from <b>{{selectedItem.title}}</b>
-  </div>
+  <div class="bottom-bar">VEDI TUTTE LE NEWS</div>
 </ion-content>
