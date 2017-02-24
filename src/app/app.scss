@@ -31,7 +31,8 @@ ion-item-sliding:not(:last-child) .item {
 }
 
 .list-md .item-block .item-inner,.item-md.item-block .item-inner
-.list-ios .item-block .item-inner,.item-ios.item-block .item-inner{
+.list-ios .item-block .item-inner,.item-ios.item-block .item-inner,
+.header-ios .toolbar-ios:last-child .toolbar-background-ios {
         border: none;
     }
 
