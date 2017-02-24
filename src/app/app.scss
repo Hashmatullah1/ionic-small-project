@@ -15,10 +15,17 @@
 // for the .md, .ios, or .wp mode classes. The mode class is
 // automatically applied to the <body> element in the app.
 .tab-button{
-    border-top : solid 0.5px #3769AC;
+    border-top : solid 2px #3769AC;
+    
 }
 .tab-button[aria-selected=true] {
-    border-top: solid 1px white;
+    border-top: solid 2px #7C9DCA;
+    .tab-button-text {
+        color : white;
+    }
+}
+.tab-button-text {
+    color : #768CBD;
 }
 .tabs-ios[tabsPlacement=top] .tabbar{
     border-top : 0px;
