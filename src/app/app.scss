@@ -36,6 +36,13 @@ ion-item-sliding:not(:last-child) .item {
         border: none;
     }
 
+    .searchbar-ios {
+        padding:15px;
+    }
+    .searchbar-ios .searchbar-input {
+        border-radius: 0px;
+    }
+
 .item-md , .item-ios , .item-wp {
     ion-avatar {
         display: flex;
