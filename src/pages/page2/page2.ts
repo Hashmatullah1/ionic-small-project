@@ -14,12 +14,12 @@ export class Page2 {
     
   }
   changeStyle(header:HTMLElement){
-    // header.style.display = 'none';
-    // this.content.resize();
-    header.style.position = 'absolute';
-    header.style.top = `-${this.content.scrollTop}px`;
-    let scrollContent = this.content.getScrollElement();
-    scrollContent.style.marginTop = `${400 - this.content.scrollTop}px`;
+    let scrollPos = this.content.scrollTop;
+    if(scrollPos<1){
+      header.style.display = 'block';
+    } else {
+      header.style.display = 'none';      
+    }
     this.content.resize();
   }
 }
