@@ -1,7 +1,7 @@
-<ion-header>
+<ion-header #header>
   <slider></slider>
 </ion-header>
-<ion-content>
+<ion-content (ionScroll)="changeStyle(header)" fullscreen=false>
   <ion-list>
     <ion-item>
       <ion-thumbnail item-left>
